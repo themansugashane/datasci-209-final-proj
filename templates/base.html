@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title if title else "Life Expectancy Project" }}</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <div class="sidebar-logo">
+        <i class="fa-solid fa-globe"></i>
+    </div>
+    <a href="/">About the Project</a>
+    <a href="/task_1">Task 1</a>
+    <a href="/task_2">Global Peer Comparison</a>
+    <a href="/task_3">Task 3</a>
+    <a href="/task_4">Task 4</a>
+</div>
+
+<div class="content">
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>

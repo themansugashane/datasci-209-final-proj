@@ -1,0 +1,166 @@
+/* ---- Layout ---- */
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #e7f6eb;
+}
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    background-color: #CBDECE;
+    padding-top: 20px;
+    color: #4A2E0B; /* Dark brown */
+}
+
+.sidebar a {
+    display: block;
+    color: #4A2E0B;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sidebar a:hover {
+    background-color: #b7ccb9;
+}
+
+.sidebar-logo {
+    text-align: center;
+    font-size: 36px;          /* size of the globe */
+    color: #4A2E0B;           /* dark brown */
+    padding: 10px;
+    border-radius: 12px;
+    margin: 10px;              /* small margin from top/left */
+    display: block;            /* ensures it behaves like a block element */
+    text-align: left;          /* align to top-left */
+}
+
+.nav-title {
+    text-align: center;
+    margin: 15px 10px 25px 10px; /* some spacing around */
+    font-size: 25px;
+    font-weight: 700;
+    color: #4A2E0B; /* dark brown */
+    background-color: #D9E6D5; /* lighter shade for the box */
+    padding: 10px 10px;
+    border-radius: 12px; /* rounded corners */
+}
+
+.content {
+    margin-left: 240px;
+    padding: 20px 40px;
+}
+
+/* ---- Introduction Header ---- */
+
+.intro-header {
+    background-color: #02542D;
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.intro-header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* ---- Intro Body ---- */
+
+.intro-body {
+    background-color: #CFE9D3;
+    color: #02542D;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.intro-body h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+/* ---- Areas of Focus ---- */
+
+.focus-section h2 {
+    font-size: 28px;
+    color: #02542D;
+}
+
+.focus-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.focus-box {
+    background: white;
+    padding: 20px;
+    flex: 1;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.focus-box h3 {
+    margin-top: 0;
+    color: #02542D;
+}
+
+/* ---- Footer ---- */
+
+.footer-credit {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #02542D;
+}
+
+/* ---- Task Pages ---- */
+
+/* Generic container for any task/page content */
+.task-container {
+    padding: 20px;
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: #02542D;
+}
+
+/* Header for any task/page */
+.task-container h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #02542D; /* dark green */
+    margin-bottom: 10px;
+}
+
+/* Thin underline under header */
+.task-container hr {
+    border: 0;
+    height: 2px;
+    background-color: #02542D;  /* dark green */
+    width: 98%; 
+    margin-bottom: 20px;
+    margin-left: 0;  /* aligns with left edge */
+}
+
+/* Paragraph text */
+.task-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Container for information surrounding visuals */
+.info-box {
+    background-color: #CFE9D3;
+    color: #02542D;
+    padding: 12px 25px;  /* top/bottom = 12px, left/right = 25px */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
