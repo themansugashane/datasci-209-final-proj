@@ -1,5 +1,40 @@
 {% extends "base.html" %}
+
 {% block content %}
-<h1>Placeholder 3</h1>
-<p>Content coming soon.</p>
+<div class="task-container">
+
+    <!-- Header -->
+    <h1>Life Expectancy Comparisons Over Time</h1>
+    <hr>
+
+    <!-- Intro / User Goal -->
+    <div class="info-box">
+        <p>
+            This visualization is designed to help <strong>policymakers assess their country's progress in life expectancy over the past two decades</strong>.
+            It brings together life expectancy and key related factors such as <strong>
+                education spending, healthcare expenditure, healthcare coverage,
+                and CO2 emissions
+            </strong>.
+        </p>
+        <p>
+            By examining how these metrics evolve over time, policymakers can begin to evaluate the apparent impact of past policies in areas like
+            healthcare and education funding or environmental regulation, and identify periods where changes in policy may align with improvements
+            or stagnation in population health.
+        </p>
+    </div>
+
+    <!-- Visualization -->
+    <div class="viz-box">
+        <p>
+            <strong>How to use this view:</strong><br>
+            Use the controls in the embedded dashboard to select a country and explore how life expectancy
+            and related factors change over time beyond GDP alone.
+        </p>
+
+        <iframe width="1400" height="1000" frameborder="0"
+                src="https://observablehq.com/embed/f39de44c1e4201ba@430?cells=appRoot&api_key=4a8c3fcb8339802b00988643bb324d3ca0c52724">
+        </iframe>
+    </div>
+
+</div>
 {% endblock %}
