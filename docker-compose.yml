@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  web:
+    image: python:3.11-slim
+    container_name: datasci209_web
+    volumes:
+      - ./:/app
+    working_dir: /app
+    environment:
+      - PYTHONUNBUFFERED=1
+    ports:
+      - "8080:8080"
+    command: /bin/sh -c "pip install --no-cache-dir -r requirements.txt && exec gunicorn -c gunicorn_config.py app:app"
+    restart: unless-stopped
