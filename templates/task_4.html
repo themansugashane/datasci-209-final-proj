@@ -1,63 +1,96 @@
 {% extends "base.html" %}
+
 {% block content %}
-<h1>Comparing Life Expentenceny and Education Spending</h1>
+<div class="task-container">
 
-<!-- Intro / User Goal -->
-<div class="info-box">
-    <p>
-        This visualization is designed to help <strong> policymakers identify how their country’s life expectancy
-            compares with global peers, and to uncover which socioeconomic or environmental factors may be driving those
-            differences. This supports evidence-based decision-making by helping officials recognize emerging strengths,
-            diagnose areas needing improvement, and prioritize future policy interventions in health, education, and
-            life expectancy.
-            .
-        </strong>.
-    </p>
-    <p>
-        By examining how these metrics evolve over time, policymakers can begin to evaluate the apparent impact of past
-        policies in areas like
-        healthcare and education funding or environmental regulation, and identify periods where changes in policy may
-        align with improvements
-        or stagnation in population health.
-    </p>
-</div>
+    <!-- Header -->
+    <h1>Economic-Level Comparison</h1>
+    <hr>
 
-<!-- Visualization -->
-<div class="viz-box">
-    <p>
-        <strong>How to use this view:</strong><br>
-        Select a country you want to explore and examine how its life expectancy compares with nations of similar
-        economic status, and look at how factors such as education spending, CO₂ emissions, healthcare coverage, or
-        healthcare expenditure may relate to those differences. Identify any notable trends, relationships, or
-        deviations that emerge across countries.
-    </p>
+    <!-- Intro / User Goal -->
+    <div class="info-box">
+        <p>
+            This visualization is designed to help <strong>policymakers identify how their country's life expectancy
+            compares with global peers of similar economic status, and to uncover which socioeconomic or environmental factors may be driving
+            those differences</strong>. This supports evidence-based decision-making by helping officials recognize
+            emerging strengths, diagnose areas needing improvement, and prioritize future policy interventions in
+            health, education, and life expectancy.
+        </p>
+        <p>
+            By focusing on countries with similar GDP levels, policymakers can more accurately determine whether differences in life expectancy
+            are driven by policy choices rather than economic capacity alone. Comparing nations with comparable resources
+            helps highlight which countries are using their budgets more effectively—for example, 
+            by investing more in education, allocating healthcare spending more efficiently, 
+            achieving broader healthcare coverage, or managing environmental pressures such as CO₂ emissions. 
+            This approach makes it easier to identify which strategies are genuinely contributing to better 
+            population health and which gaps may represent missed opportunities for improvement.
+        </p>
+    </div>
 
-    <div class='tableauPlaceholder' id='viz1764615075821' style='position: relative'><noscript><a href='#'><img
-                    alt='Dashboard 1 '
-                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;Task4updated_17645990438230&#47;Dashboard1&#47;1_rss.png'
-                    style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-            <param name='embed_code_version' value='3' />
-            <param name='site_root' value='' />
-            <param name='name' value='Task4updated_17645990438230&#47;Dashboard1' />
-            <param name='tabs' value='no' />
-            <param name='toolbar' value='yes' />
-            <param name='static_image'
-                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;Task4updated_17645990438230&#47;Dashboard1&#47;1.png' />
-            <param name='animate_transition' value='yes' />
-            <param name='display_static_image' value='yes' />
-            <param name='display_spinner' value='yes' />
-            <param name='display_overlay' value='yes' />
-            <param name='display_count' value='yes' />
-            <param name='language' value='en-US' />
-            <param name='filter' value='publish=yes' />
-        </object></div>
-    <script
-        type='text/javascript'>                    var divElement = document.getElementById('viz1764615075821'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1600px'; vizElement.style.height = '927px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1600px'; vizElement.style.height = '927px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '1927px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-    <p>If the visualization doesn't load in this page you can open it directly in a new tab: <a
-            href="https://public.tableau.com/views/Task4updated_17645990438230/Dashboard1" target="_blank"
-            rel="noopener">Open Tableau dashboard</a>.</p>
-</div>
+    <!-- Visualization -->
+    <div class="viz-box">
+        <p>
+            <strong>How to use this view:</strong><br>
+            Select a country you want to explore and examine how its life expectancy compares with nations of similar
+            economic status. Look at how factors such as education spending, CO₂ emissions, healthcare coverage, or
+            healthcare expenditure may relate to those differences. Identify notable trends or deviations across
+            countries.
+        </p>
+
+        <!-- Tableau Embed -->
+        <div class='tableauPlaceholder' id='viz1764615075821' style='position: relative'>
+            <noscript>
+                <a href='#'>
+                    <img alt='Dashboard 1'
+                        src='https://public.tableau.com/static/images/Ta/Task4updated_17645990438230/Dashboard1/1_rss.png'
+                        style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='Task4updated_17645990438230/Dashboard1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https://public.tableau.com/static/images/Ta/Task4updated_17645990438230/Dashboard1/1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+                <param name='filter' value='publish=yes' />
+            </object>
+        </div>
+
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1764615075821');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '1600px';
+                vizElement.style.height = '927px';
+            } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '1600px';
+                vizElement.style.height = '927px';
+            } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '1927px';
+            }
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+
+        <p>
+            If the visualization doesn’t load in this page, you can open it directly in a new tab:
+            <a href="https://public.tableau.com/views/Task4updated_17645990438230/Dashboard1"
+               target="_blank" rel="noopener">
+               Open Tableau dashboard
+            </a>.
+        </p>
+    </div>
 
 </div>
 {% endblock %}
